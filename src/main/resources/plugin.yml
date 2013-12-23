@@ -1,0 +1,4 @@
+name: CommandForwarder
+main: me.geekofgallifrey.plugin.CommandForwarder
+version: 1.0
+description: Forwards the commands specified from the config to other commands.
