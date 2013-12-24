@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,6 +20,7 @@ public class CommandForwarderPlugin extends JavaPlugin
     {
         this.getServer().getPluginManager().registerEvents(new CommandForwarderListener(this), this);
         logInfo("Now enabled!");
+        this.saveDefaultConfig();
         setConfig();
     }
     

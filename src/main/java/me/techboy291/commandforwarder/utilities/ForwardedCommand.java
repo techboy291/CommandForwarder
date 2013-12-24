@@ -39,7 +39,7 @@ public class ForwardedCommand
         }
         
         String permissionKey = commandKey + ".permission";
-        if(config.contains(pemissionKey))
+        if(config.contains(permissionKey))
         {
             permission = config.getString(permissionKey);
         }
